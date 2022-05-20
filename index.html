@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e95a6492cf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu projeto</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/android-chrome-192x192.png" alt="logo">
+        </div>
+        <ul>
+                <li><a href="https://github.com/fernandogs07" target="_blank">GitHub</a></li>
+                <li><a href="https://wa.me/5511980715573" target="_blank">WhatsApp</a></li>
+                <li><a href="mailto:fernandogs07@hotmail.com">Email</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Fernando Gomes</h1>
+                <h5>Front end Developer</h5>
+            </div>
+            <div class="arrow" >
+                <i onclick="clicar()" id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p id="about2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, id officiis voluptates suscipit amet consequatur, neque nisi recusandae laborum nam nesciunt corrupti magni deserunt in laudantium dolorum quis fuga accusamus.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email ;)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+        <script>
+
+            function clicar(){
+                var arrow = document.getElementById('animation');
+                var display = document.getElementById('about');
+                arrow.classList.toggle('rotate');
+                display.classList.toggle('active');
+
+            }
+        </script>
+
+</body>
+</html>

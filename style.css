@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+   background: url(img/backgroud.jpg) no-repeat;
+   background-size: cover;
+}
+header{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 3px solid white;
+    box-shadow: 1px 5px 1px gray;
+    margin-bottom: 45px;
+}
+
+#logo img{
+    width: 80px;
+}
+    
+ul{
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+}
+
+header ul li{
+    margin: 5px;
+    padding: 5px;
+}
+
+header ul li:hover{
+    
+    color: #746829;
+}
+
+header ul li a{
+    transition: 300ms;
+}
+
+header ul li a:hover{
+    color: #ceb744;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    /* color: black; */
+}
+
+
+.container{
+    text-align: center;
+}
+.container .name h1{
+    font-size: 40px;
+
+}
+.container .name h5{
+    font-size: 20px;
+
+}
+
+.arrow{
+    
+    font-size: 35px;
+    cursor: pointer;
+    animation: piscar 1s steps(5, start) infinite;
+    transition: 300ms;
+}
+
+@keyframes piscar{
+    to {
+        visibility: hidden;
+    }
+}
+
+/* #animation{
+   
+    transition: 300ms;
+} */
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    margin-top: 5px;
+
+
+}
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c09717 50%, #9c551b 50% );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+.form button:hover{
+    background-position: left bottom;
+    
+}
+
+@media only screen and (max-width: 600px){
+
+    ul{
+        flex-direction: column  ;
+    }
+    .form button{
+        width: 35%;
+    
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+
+
+    .form button{
+        width: 35%;
+    
+    }
+
+}
